@@ -119,8 +119,34 @@ The path type is a special string type that can include forward slashes, unlike 
 #Complete Application : - code in chapter2/complete-app.py
 
 #We have not included the development web server yet.
+#this means there is no server. 
+#so far a web applications need the router to handle trafiic and the server to provide the traffic.
+this is analogous to a road, vehicles and police officer/traffic lights.
 
+The road routes the traffic, the traffic is the vehicles and the police officer/traffic lights say when the traffic will go or not.(needs a bit of improvement though)
 
+#to create production web servers will be taught in chapter 17.
+#development web servers are meant for testing asnd development.
+
+Note: "The perfect website is one which one can access without getting lost." (Jared Makario)
+
+#to run development web server.(Linux) 
+#Run : 
+#        export FLASK_APP=complete-app.py in terminal.
+#    then : 
+#        flask run
+
+#to run development web server.(Windows) 
+#Run : 
+#        set FLASK_APP=complete-app.py in terminal.
+#    then : 
+#        flask run
+
+#the Flask dws can also be started programmatically by invoking the app.run() method.
+'''if __name__ == '__main__':
+    app.run()
+'''
+#using flask run is more practical. the above is used in certain occasions suchh as unit testing.
 
 
 
