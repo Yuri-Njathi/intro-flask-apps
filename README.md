@@ -52,6 +52,20 @@ As a developer , you have the power to pick or create necessary extensions. In l
 						or
 			venv\Scripts\python (Windows)
 
+#I'm using python 3.6.9
+
+
+#installing Python Packages with pip.
+ 
+ activate venv as above
+
+ 			pip install flask
+
+ create a requirements.txt for that environment. 
+
+ 			pip freeze requirements.txt
+
+ 
 
 
 
