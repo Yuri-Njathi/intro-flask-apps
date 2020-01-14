@@ -63,9 +63,9 @@ As a developer , you have the power to pick or create necessary extensions. In l
 
  create a requirements.txt for that environment. 
 
- 			pip freeze requirements.txt
+ 			pip freeze -> requirements.txt
 
- 
+
 
 
 
