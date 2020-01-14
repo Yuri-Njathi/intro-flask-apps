@@ -32,7 +32,8 @@ As a developer , you have the power to pick or create necessary extensions. In l
 			or
 
 			virtualenv venv-name
-
+	#a convention for virtual envs is to call them venv-name
+	
 	To activate the virtual environment : 
 
 			source venv-name/bin/activate (Linux/Mac-Os)
@@ -66,8 +67,23 @@ As a developer , you have the power to pick or create necessary extensions. In l
  			pip freeze -> requirements.txt
 
 
+#Chapter 2
+#Write and run your first web application.
+
+#Initialization.
+All flask apps must create an application instance.
+The web server passes all requests it receives from clients to this object for handling , using a protocal called Web Server Gateway Interface(WSGI pronounced 
+"wiz-ghee")
+
+The application instance is an object of class Flask, usually created as follows : 
+		
+		from flask import Flask
+		app = Flask(__name__)
+
+#__name__ to be revisited.
+#to initialize an application to be revisited.
 
 
 
 
-	#a convention for virtual envs is to call them venv-name
+	
