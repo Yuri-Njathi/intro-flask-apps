@@ -98,7 +98,7 @@ Example :
 #Decorators are a standard feature of Python langauge.They are usually used to register functions as handler functions to be invoked when certain events occur.
 
 #another route method is app.add_url_rule()
-	def index():
+	def index(): #static route
 		return '<h1>Hello World!</h1>'	
 	app.add_url_rule('/', 'index', index)
 
@@ -109,7 +109,7 @@ Example :
 
 #URLS for services.
 The url for your facebook profile page has the format https://www.facebook.com/<your-name>, which includes your username, making it different for every user.
-	@app.route('/user/<name>')
+	@app.route('/user/<name>') #dynamic route
 	def user(name):
 		return '<h1> Hello , {}! </h1>'.format(name)
 
@@ -148,6 +148,26 @@ Note: "The perfect website is one which one can access without getting lost." (J
 '''
 #using flask run is more practical. the above is used in certain occasions suchh as unit testing.
 
+#Debug Mode#
+Flask applications can optionally be executed in debug mode where the reloader module and debugger module are eneabled by default.
+
+#reloader module
+	 Flask watches all the source code files of your project and automatically restarts the server when any of the files are modified.
+
+	 This is extremely useful during development because every time you modify and save a source file, the server automatically restarts and picks up the change.
+
+#debugger module - is a web based tool that appears in your browser when your application raises an unhandled exception. The web browser window transforms into an interactive stack trace that allows you to inspect source code and evaluate expressions in any place in the call stack.
+
+To enable debug mode:(Linux)
+ 	export FLASK_APP=appname.py
+ 	export FLASK_DEBUG=1 #this statement is the necessary one.
+ 	flask run
+
+ 	In Windows use set instead of export.
+
+or
+	'''if __name__ == '__main__':
+    app.run(debug = True)
+	'''
 
 
-	
